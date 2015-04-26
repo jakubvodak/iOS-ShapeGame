@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB7FA6201AEC05F0009314FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA61F1AEC05F0009314FE /* main.m */; };
+		CB7FA6231AEC05F0009314FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6221AEC05F0009314FE /* AppDelegate.m */; };
+		CB7FA6261AEC05F0009314FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6251AEC05F0009314FE /* ViewController.m */; };
+		CB7FA62B1AEC05F0009314FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7FA62A1AEC05F0009314FE /* Images.xcassets */; };
+		CB7FA62E1AEC05F0009314FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB7FA62C1AEC05F0009314FE /* LaunchScreen.xib */; };
+		CB7FA63A1AEC05F1009314FE /* ShapeGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6391AEC05F1009314FE /* ShapeGameTests.m */; };
+		CB7FA6451AEC0756009314FE /* CarStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6441AEC0756009314FE /* CarStore.m */; };
+		CB7FA64B1AEC293E009314FE /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA64A1AEC293E009314FE /* IntroViewController.m */; };
+		CB7FA64E1AEC294F009314FE /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA64D1AEC294F009314FE /* GameViewController.m */; };
+		CB7FA6511AEC2C58009314FE /* ShapeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6501AEC2C58009314FE /* ShapeEntity.m */; };
+		CB7FA6541AEC2D8B009314FE /* ShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6531AEC2D8B009314FE /* ShapeView.m */; };
+		CB7FA6571AECCE21009314FE /* TimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6561AECCE21009314FE /* TimerView.m */; };
+		CB7FA65A1AECCE99009314FE /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6591AECCE99009314FE /* InfoView.m */; };
+		CB7FA65D1AECCEA8009314FE /* FieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA65C1AECCEA8009314FE /* FieldView.m */; };
+		CB7FA6611AECD063009314FE /* UIColor+ShapeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6601AECD063009314FE /* UIColor+ShapeGame.m */; };
+		CB7FA6671AECD650009314FE /* UIFont+ShapeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6661AECD650009314FE /* UIFont+ShapeGame.m */; };
+		CB7FA66B1AECD7CF009314FE /* TimerService.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA66A1AECD7CF009314FE /* TimerService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB7FA6341AEC05F1009314FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB7FA6121AEC05F0009314FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB7FA6191AEC05F0009314FE;
+			remoteInfo = ShapeGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB7FA61A1AEC05F0009314FE /* ShapeGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShapeGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7FA61E1AEC05F0009314FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB7FA61F1AEC05F0009314FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB7FA6211AEC05F0009314FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB7FA6221AEC05F0009314FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB7FA6241AEC05F0009314FE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CB7FA6251AEC05F0009314FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CB7FA62A1AEC05F0009314FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB7FA62D1AEC05F0009314FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CB7FA6331AEC05F1009314FE /* ShapeGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShapeGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7FA6381AEC05F1009314FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB7FA6391AEC05F1009314FE /* ShapeGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeGameTests.m; sourceTree = "<group>"; };
+		CB7FA6431AEC0756009314FE /* CarStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarStore.h; sourceTree = "<group>"; };
+		CB7FA6441AEC0756009314FE /* CarStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarStore.m; sourceTree = "<group>"; };
+		CB7FA6491AEC293E009314FE /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		CB7FA64A1AEC293E009314FE /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		CB7FA64C1AEC294F009314FE /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		CB7FA64D1AEC294F009314FE /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		CB7FA64F1AEC2C58009314FE /* ShapeEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeEntity.h; sourceTree = "<group>"; };
+		CB7FA6501AEC2C58009314FE /* ShapeEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeEntity.m; sourceTree = "<group>"; };
+		CB7FA6521AEC2D8B009314FE /* ShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeView.h; sourceTree = "<group>"; };
+		CB7FA6531AEC2D8B009314FE /* ShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeView.m; sourceTree = "<group>"; };
+		CB7FA6551AECCE21009314FE /* TimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerView.h; sourceTree = "<group>"; };
+		CB7FA6561AECCE21009314FE /* TimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerView.m; sourceTree = "<group>"; };
+		CB7FA6581AECCE99009314FE /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoView.h; sourceTree = "<group>"; };
+		CB7FA6591AECCE99009314FE /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
+		CB7FA65B1AECCEA8009314FE /* FieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldView.h; sourceTree = "<group>"; };
+		CB7FA65C1AECCEA8009314FE /* FieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldView.m; sourceTree = "<group>"; };
+		CB7FA65F1AECD063009314FE /* UIColor+ShapeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ShapeGame.h"; sourceTree = "<group>"; };
+		CB7FA6601AECD063009314FE /* UIColor+ShapeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ShapeGame.m"; sourceTree = "<group>"; };
+		CB7FA6631AECD1EC009314FE /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		CB7FA6641AECD2CF009314FE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CB7FA6651AECD650009314FE /* UIFont+ShapeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+ShapeGame.h"; sourceTree = "<group>"; };
+		CB7FA6661AECD650009314FE /* UIFont+ShapeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ShapeGame.m"; sourceTree = "<group>"; };
+		CB7FA6691AECD7CF009314FE /* TimerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerService.h; sourceTree = "<group>"; };
+		CB7FA66A1AECD7CF009314FE /* TimerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerService.m; sourceTree = "<group>"; };
+		CB7FA66C1AED0350009314FE /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB7FA6171AEC05F0009314FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7FA6301AEC05F1009314FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB7FA6111AEC05F0009314FE = {
+			isa = PBXGroup;
+			children = (
+				CB7FA61C1AEC05F0009314FE /* ShapeGame */,
+				CB7FA6361AEC05F1009314FE /* ShapeGameTests */,
+				CB7FA61B1AEC05F0009314FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB7FA61B1AEC05F0009314FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB7FA61A1AEC05F0009314FE /* ShapeGame.app */,
+				CB7FA6331AEC05F1009314FE /* ShapeGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB7FA61C1AEC05F0009314FE /* ShapeGame */ = {
+			isa = PBXGroup;
+			children = (
+				CB7FA6681AECD7BC009314FE /* Service */,
+				CB7FA6621AECD1D7009314FE /* Common */,
+				CB7FA65E1AECD043009314FE /* Category */,
+				CB7FA6481AEC28E2009314FE /* Controller */,
+				CB7FA6471AEC28DD009314FE /* View */,
+				CB7FA6461AEC28D8009314FE /* Model */,
+				CB7FA6211AEC05F0009314FE /* AppDelegate.h */,
+				CB7FA6221AEC05F0009314FE /* AppDelegate.m */,
+				CB7FA6241AEC05F0009314FE /* ViewController.h */,
+				CB7FA6251AEC05F0009314FE /* ViewController.m */,
+				CB7FA6431AEC0756009314FE /* CarStore.h */,
+				CB7FA6441AEC0756009314FE /* CarStore.m */,
+				CB7FA62A1AEC05F0009314FE /* Images.xcassets */,
+				CB7FA62C1AEC05F0009314FE /* LaunchScreen.xib */,
+				CB7FA61D1AEC05F0009314FE /* Supporting Files */,
+			);
+			path = ShapeGame;
+			sourceTree = "<group>";
+		};
+		CB7FA61D1AEC05F0009314FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB7FA61E1AEC05F0009314FE /* Info.plist */,
+				CB7FA6641AECD2CF009314FE /* PrefixHeader.pch */,
+				CB7FA61F1AEC05F0009314FE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB7FA6361AEC05F1009314FE /* ShapeGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB7FA6391AEC05F1009314FE /* ShapeGameTests.m */,
+				CB7FA6371AEC05F1009314FE /* Supporting Files */,
+			);
+			path = ShapeGameTests;
+			sourceTree = "<group>";
+		};
+		CB7FA6371AEC05F1009314FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB7FA6381AEC05F1009314FE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB7FA6461AEC28D8009314FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB7FA64F1AEC2C58009314FE /* ShapeEntity.h */,
+				CB7FA6501AEC2C58009314FE /* ShapeEntity.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CB7FA6471AEC28DD009314FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB7FA6521AEC2D8B009314FE /* ShapeView.h */,
+				CB7FA6531AEC2D8B009314FE /* ShapeView.m */,
+				CB7FA6551AECCE21009314FE /* TimerView.h */,
+				CB7FA6561AECCE21009314FE /* TimerView.m */,
+				CB7FA65B1AECCEA8009314FE /* FieldView.h */,
+				CB7FA65C1AECCEA8009314FE /* FieldView.m */,
+				CB7FA6581AECCE99009314FE /* InfoView.h */,
+				CB7FA6591AECCE99009314FE /* InfoView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CB7FA6481AEC28E2009314FE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB7FA6491AEC293E009314FE /* IntroViewController.h */,
+				CB7FA64A1AEC293E009314FE /* IntroViewController.m */,
+				CB7FA64C1AEC294F009314FE /* GameViewController.h */,
+				CB7FA64D1AEC294F009314FE /* GameViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CB7FA65E1AECD043009314FE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CB7FA65F1AECD063009314FE /* UIColor+ShapeGame.h */,
+				CB7FA6601AECD063009314FE /* UIColor+ShapeGame.m */,
+				CB7FA6651AECD650009314FE /* UIFont+ShapeGame.h */,
+				CB7FA6661AECD650009314FE /* UIFont+ShapeGame.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		CB7FA6621AECD1D7009314FE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CB7FA6631AECD1EC009314FE /* Macros.h */,
+				CB7FA66C1AED0350009314FE /* Constants.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		CB7FA6681AECD7BC009314FE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CB7FA6691AECD7CF009314FE /* TimerService.h */,
+				CB7FA66A1AECD7CF009314FE /* TimerService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB7FA6191AEC05F0009314FE /* ShapeGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB7FA63D1AEC05F1009314FE /* Build configuration list for PBXNativeTarget "ShapeGame" */;
+			buildPhases = (
+				CB7FA6161AEC05F0009314FE /* Sources */,
+				CB7FA6171AEC05F0009314FE /* Frameworks */,
+				CB7FA6181AEC05F0009314FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShapeGame;
+			productName = ShapeGame;
+			productReference = CB7FA61A1AEC05F0009314FE /* ShapeGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB7FA6321AEC05F1009314FE /* ShapeGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB7FA6401AEC05F1009314FE /* Build configuration list for PBXNativeTarget "ShapeGameTests" */;
+			buildPhases = (
+				CB7FA62F1AEC05F1009314FE /* Sources */,
+				CB7FA6301AEC05F1009314FE /* Frameworks */,
+				CB7FA6311AEC05F1009314FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB7FA6351AEC05F1009314FE /* PBXTargetDependency */,
+			);
+			name = ShapeGameTests;
+			productName = ShapeGameTests;
+			productReference = CB7FA6331AEC05F1009314FE /* ShapeGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB7FA6121AEC05F0009314FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = h2ocompany;
+				TargetAttributes = {
+					CB7FA6191AEC05F0009314FE = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					CB7FA6321AEC05F1009314FE = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = CB7FA6191AEC05F0009314FE;
+					};
+				};
+			};
+			buildConfigurationList = CB7FA6151AEC05F0009314FE /* Build configuration list for PBXProject "ShapeGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB7FA6111AEC05F0009314FE;
+			productRefGroup = CB7FA61B1AEC05F0009314FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB7FA6191AEC05F0009314FE /* ShapeGame */,
+				CB7FA6321AEC05F1009314FE /* ShapeGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB7FA6181AEC05F0009314FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7FA62E1AEC05F0009314FE /* LaunchScreen.xib in Resources */,
+				CB7FA62B1AEC05F0009314FE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7FA6311AEC05F1009314FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB7FA6161AEC05F0009314FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7FA6671AECD650009314FE /* UIFont+ShapeGame.m in Sources */,
+				CB7FA6451AEC0756009314FE /* CarStore.m in Sources */,
+				CB7FA6261AEC05F0009314FE /* ViewController.m in Sources */,
+				CB7FA6541AEC2D8B009314FE /* ShapeView.m in Sources */,
+				CB7FA6571AECCE21009314FE /* TimerView.m in Sources */,
+				CB7FA66B1AECD7CF009314FE /* TimerService.m in Sources */,
+				CB7FA6231AEC05F0009314FE /* AppDelegate.m in Sources */,
+				CB7FA6201AEC05F0009314FE /* main.m in Sources */,
+				CB7FA65D1AECCEA8009314FE /* FieldView.m in Sources */,
+				CB7FA64E1AEC294F009314FE /* GameViewController.m in Sources */,
+				CB7FA64B1AEC293E009314FE /* IntroViewController.m in Sources */,
+				CB7FA6611AECD063009314FE /* UIColor+ShapeGame.m in Sources */,
+				CB7FA65A1AECCE99009314FE /* InfoView.m in Sources */,
+				CB7FA6511AEC2C58009314FE /* ShapeEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7FA62F1AEC05F1009314FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7FA63A1AEC05F1009314FE /* ShapeGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB7FA6351AEC05F1009314FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB7FA6191AEC05F0009314FE /* ShapeGame */;
+			targetProxy = CB7FA6341AEC05F1009314FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB7FA62C1AEC05F0009314FE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB7FA62D1AEC05F0009314FE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB7FA63B1AEC05F1009314FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB7FA63C1AEC05F1009314FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB7FA63E1AEC05F1009314FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = ShapeGame/PrefixHeader.pch;
+				INFOPLIST_FILE = ShapeGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB7FA63F1AEC05F1009314FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = ShapeGame/PrefixHeader.pch;
+				INFOPLIST_FILE = ShapeGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB7FA6411AEC05F1009314FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShapeGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShapeGame.app/ShapeGame";
+			};
+			name = Debug;
+		};
+		CB7FA6421AEC05F1009314FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShapeGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShapeGame.app/ShapeGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB7FA6151AEC05F0009314FE /* Build configuration list for PBXProject "ShapeGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7FA63B1AEC05F1009314FE /* Debug */,
+				CB7FA63C1AEC05F1009314FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB7FA63D1AEC05F1009314FE /* Build configuration list for PBXNativeTarget "ShapeGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7FA63E1AEC05F1009314FE /* Debug */,
+				CB7FA63F1AEC05F1009314FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB7FA6401AEC05F1009314FE /* Build configuration list for PBXNativeTarget "ShapeGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7FA6411AEC05F1009314FE /* Debug */,
+				CB7FA6421AEC05F1009314FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB7FA6121AEC05F0009314FE /* Project object */;
+}

@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  ShapeGame
+//
+//  Created by Jakub Vodak on 4/26/15.
+//  Copyright (c) 2015 h2ocompany. All rights reserved.
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "Macros.h"
+    #import "Constants.h"
+    #import "UIColor+ShapeGame.h"
+    #import "UIFont+ShapeGame.h"
+#endif
