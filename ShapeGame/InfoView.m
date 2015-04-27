@@ -32,6 +32,49 @@
 - (void)applyAppearance
 {
     self.backgroundColor = [UIColor customPurple];
+    
+    
+    /* Type Label */
+    
+    _typeLabel = [[[UILabel alloc] init] autorelease];
+    
+    _typeLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    _typeLabel.textColor = [UIColor whiteColor];
+    
+    _typeLabel.font = [UIFont customFontWithSize:28];
+    
+    [self addSubview:_typeLabel];
+    
+    
+    /* Constraints */
+    
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:_typeLabel attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+    
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:_typeLabel attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
+    
+}
+
+
+- (void)setupShapeType:(shapeType)type
+{
+    switch (type) {
+            
+        case shapeTypeSquare:
+            _typeLabel.text = @"Square";
+            break;
+            
+        case shapeTypeCircle:
+            _typeLabel.text = @"Circle";
+            break;
+            
+        case shapeTypeTriangel:
+            _typeLabel.text = @"Triangel";
+            break;
+            
+        default:
+            break;
+    }
 }
 
 @end

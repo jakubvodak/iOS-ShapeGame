@@ -13,6 +13,6 @@
 
 @property (nonatomic, assign) ShapeEntity *shapeDescription;
 
-+ (CGRect)randomRectForView: (UIView *)view;
+- (void)setRandomRectForView:(UIView *)view;
 
 @end

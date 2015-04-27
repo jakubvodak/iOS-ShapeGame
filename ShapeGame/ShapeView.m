@@ -18,6 +18,8 @@
         
         _shapeDescription = [ShapeEntity new];
         
+        _shapeDescription.type = fmodf(rand(), 3);
+        
         [self applyAppearance];
     }
     
@@ -27,6 +29,8 @@
 
 - (void)dealloc
 {
+    [_shapeDescription release];
+    
     [super dealloc];
 }
 
@@ -39,29 +43,69 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    /* Draw a circle */
-    // Get the contextRef
-    CGContextRef contextRef = UIGraphicsGetCurrentContext();
-    
-    // Set the circle fill color to GREEN
-    CGContextSetRGBFillColor(contextRef, 0.0, 255.0, 0.0, 1.0);
-    
-    // Fill the circle with the fill color
-    CGContextFillEllipseInRect(contextRef, rect);
+    if (_shapeDescription.type == shapeTypeCircle) {
+        
+        /* Draw a circle */
+        
+        CGContextRef contextRef = UIGraphicsGetCurrentContext();
+        
+        CGContextSetRGBFillColor(contextRef, 189/255, 117.0/255, 118.0/255, 1.0);
+        
+        CGContextFillEllipseInRect(contextRef, rect);
+    }
+    else if (_shapeDescription.type == shapeTypeSquare) {
+        
+        /* Draw a square */
+        
+        CGContextRef contextRef = UIGraphicsGetCurrentContext();
+        
+        CGContextSetRGBFillColor(contextRef, 242.0/255, 129.0/255, 121.0/255, 1.0);
+        
+        CGContextFillRect(contextRef, rect);
+    }
+    else if (_shapeDescription.type == shapeTypeTriangel) {
+        
+        /* Draw a triangel */
+        
+        CGContextRef ctx = UIGraphicsGetCurrentContext();
+        
+        CGContextBeginPath(ctx);
+       
+        CGContextMoveToPoint   (ctx, CGRectGetMinX(rect), CGRectGetMinY(rect));  // top left
+        
+        CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect), CGRectGetMidY(rect));  // mid right
+        
+        CGContextAddLineToPoint(ctx, CGRectGetMinX(rect), CGRectGetMaxY(rect));  // bottom left
+        
+        CGContextClosePath(ctx);
+        
+        CGContextSetRGBFillColor(ctx, 125.0/255, 96.0/255, 114.0/255, 1);
+        
+        CGContextFillPath(ctx);
+    }
 }
 
 
-+ (CGRect)randomRectForView:(UIView *)view
+- (void)setRandomRectForView:(UIView *)view
 {
     CGFloat width = fmodf(rand(), 30) + 30;
+
+    CGFloat height;
     
-    CGFloat height = fmodf(rand(), 30) + 30;
+    if (_shapeDescription.type == shapeTypeCircle || _shapeDescription.type == shapeTypeSquare) {
+        
+        height = width;
+    }
+    else {
+        
+        height = fmodf(rand(), 30) + 30;
+    }
     
     CGFloat x = fmod(rand(), view.frame.size.width - width);
     
     CGFloat y = fmod(rand(), view.frame.size.height - height);
     
-    return CGRectMake(x, y, width, height);
+    self.frame = CGRectMake(x, y, width, height);
 }
 
 

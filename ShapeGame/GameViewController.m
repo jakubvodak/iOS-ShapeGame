@@ -21,14 +21,13 @@
 
 @property (nonatomic, retain) InfoView *bottomView;
 
-@property (nonatomic, retain) NSMutableArray *shapesArray;
-
 
 @property (nonatomic) NSInteger shapeIndex;
 
 @property (nonatomic) NSInteger score;
 
 @end
+
 
 @implementation GameViewController
 
@@ -41,11 +40,13 @@
     [self applyAppearance];
     
     
+    /* Game Initialization */
+    
     _score = 0;
     
     _shapeIndex = 0;
     
-    [self addShapes:10];
+    [self addShapes:20];
     
     
     /* Register for notifications */
@@ -73,7 +74,6 @@
 - (void)dealloc
 {
     [super dealloc];
-    
 }
 
 
@@ -134,11 +134,24 @@
 {
     UITapGestureRecognizer *tapRecognizer = (UITapGestureRecognizer *)sender;
     
-    [tapRecognizer.view removeFromSuperview];
+    ShapeView *view = (ShapeView *)tapRecognizer.view;
+    
+    
+    /* Info Panel */
+    
+    [_bottomView setupShapeType: view.shapeDescription.type];
+    
+    
+    /* Score */
     
     _score++;
     
     [_topView setScore:_score];
+    
+    
+    /* Remove View */
+    
+    [view removeFromSuperview];
 }
 
 
@@ -148,7 +161,7 @@
 }
 
 
-#pragma mark - Game prograss
+#pragma mark - Game Progress
 
 - (void)timerUpdate
 {
@@ -167,8 +180,6 @@
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
     
-    alert.tag = 1;
-    
     [alert show];
 }
 
@@ -181,11 +192,15 @@
         
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(shapeTouched:)];
         
-        ShapeView *shape1 = [[[ShapeView alloc] initWithFrame:[ShapeView randomRectForView:_middleView]] autorelease];
+        
+        ShapeView *shape1 = [[[ShapeView alloc] init] autorelease];
+        
+        [shape1 setRandomRectForView:_middleView];
         
         [shape1 addGestureRecognizer:tap];
         
         shape1.tag = i;
+        
         
         [_middleView addSubview:shape1];
     }

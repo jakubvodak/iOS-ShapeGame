@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		CB7FA6201AEC05F0009314FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA61F1AEC05F0009314FE /* main.m */; };
 		CB7FA6231AEC05F0009314FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6221AEC05F0009314FE /* AppDelegate.m */; };
-		CB7FA6261AEC05F0009314FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6251AEC05F0009314FE /* ViewController.m */; };
 		CB7FA62B1AEC05F0009314FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7FA62A1AEC05F0009314FE /* Images.xcassets */; };
 		CB7FA62E1AEC05F0009314FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB7FA62C1AEC05F0009314FE /* LaunchScreen.xib */; };
 		CB7FA63A1AEC05F1009314FE /* ShapeGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6391AEC05F1009314FE /* ShapeGameTests.m */; };
-		CB7FA6451AEC0756009314FE /* CarStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6441AEC0756009314FE /* CarStore.m */; };
 		CB7FA64B1AEC293E009314FE /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA64A1AEC293E009314FE /* IntroViewController.m */; };
 		CB7FA64E1AEC294F009314FE /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA64D1AEC294F009314FE /* GameViewController.m */; };
 		CB7FA6511AEC2C58009314FE /* ShapeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FA6501AEC2C58009314FE /* ShapeEntity.m */; };
@@ -42,15 +40,11 @@
 		CB7FA61F1AEC05F0009314FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB7FA6211AEC05F0009314FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB7FA6221AEC05F0009314FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CB7FA6241AEC05F0009314FE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CB7FA6251AEC05F0009314FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CB7FA62A1AEC05F0009314FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB7FA62D1AEC05F0009314FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CB7FA6331AEC05F1009314FE /* ShapeGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShapeGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7FA6381AEC05F1009314FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB7FA6391AEC05F1009314FE /* ShapeGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeGameTests.m; sourceTree = "<group>"; };
-		CB7FA6431AEC0756009314FE /* CarStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarStore.h; sourceTree = "<group>"; };
-		CB7FA6441AEC0756009314FE /* CarStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarStore.m; sourceTree = "<group>"; };
 		CB7FA6491AEC293E009314FE /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
 		CB7FA64A1AEC293E009314FE /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
 		CB7FA64C1AEC294F009314FE /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
@@ -123,10 +117,6 @@
 				CB7FA6461AEC28D8009314FE /* Model */,
 				CB7FA6211AEC05F0009314FE /* AppDelegate.h */,
 				CB7FA6221AEC05F0009314FE /* AppDelegate.m */,
-				CB7FA6241AEC05F0009314FE /* ViewController.h */,
-				CB7FA6251AEC05F0009314FE /* ViewController.m */,
-				CB7FA6431AEC0756009314FE /* CarStore.h */,
-				CB7FA6441AEC0756009314FE /* CarStore.m */,
 				CB7FA62A1AEC05F0009314FE /* Images.xcassets */,
 				CB7FA62C1AEC05F0009314FE /* LaunchScreen.xib */,
 				CB7FA61D1AEC05F0009314FE /* Supporting Files */,
@@ -325,8 +315,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB7FA6671AECD650009314FE /* UIFont+ShapeGame.m in Sources */,
-				CB7FA6451AEC0756009314FE /* CarStore.m in Sources */,
-				CB7FA6261AEC05F0009314FE /* ViewController.m in Sources */,
 				CB7FA6541AEC2D8B009314FE /* ShapeView.m in Sources */,
 				CB7FA6571AECCE21009314FE /* TimerView.m in Sources */,
 				CB7FA66B1AECD7CF009314FE /* TimerService.m in Sources */,

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ShapeEntity.h"
 
 @interface InfoView : UIView
+
+@property (nonatomic, strong) UILabel *typeLabel;
+
+- (void)setupShapeType: (shapeType)type;
 
 @end
